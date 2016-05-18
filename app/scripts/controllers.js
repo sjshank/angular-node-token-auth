@@ -33,14 +33,6 @@ angular.module('angularRestfulAuth')
             })
         };
 
-        $scope.me = function() {
-            Main.me(function(res) {
-                $scope.myDetails = res;
-            }, function() {
-                $rootScope.error = 'Failed to fetch details';
-            })
-        };
-
         $scope.logout = function() {
             Main.logout(function() {
                 $location.path('/');

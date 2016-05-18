@@ -21,7 +21,7 @@ angular.module('angularRestfulAuth', [
         }).
         when('/me', {
             templateUrl: 'partials/me.html',
-            controller: 'HomeCtrl'
+            controller: 'MeCtrl'
         }).
         otherwise({
             redirectTo: '/'
