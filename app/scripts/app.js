@@ -46,4 +46,11 @@ angular.module('angularRestfulAuth', [
         }]);
 
     }
-]);
+])
+
+//HTML5 Routing Mode
+.config(['$locationProvider', function($locationProvider) {
+        $locationProvider.html5Mode({
+            enabled: true
+        });
+}]);
